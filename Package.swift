@@ -1,18 +1,4 @@
 // swift-tools-version:5.6
-// Copyright 2024 AnyMind Group
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
 import PackageDescription
 
 let package = Package(
@@ -25,12 +11,10 @@ let package = Package(
     )
   ],
   dependencies: [
-    // GMA Core — has version tags
     .package(
       url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
-      "11.0.0"..<"15.0.0"
+      "13.0.0"..<"15.0.0"
     ),
-    // Google adapters — all use branch: "main"
     .package(
       url: "https://github.com/googleads/googleads-mobile-ios-mediation-applovin.git",
       branch: "main"
@@ -79,12 +63,7 @@ let package = Package(
       url: "https://github.com/googleads/googleads-mobile-ios-mediation-unity.git",
       branch: "main"
     ),
-    // Ogury — uses "master" not "main"
-    .package(
-      url: "https://github.com/Ogury/ogury-google-adapter-spm",
-      branch: "master"
-    ),
-    // Equativ (Smart AdServer)
+    // ❌ Ogury REMOVED — conflicts with Unity (needs GMA 12.x vs Unity needs 13.x)
     .package(
       url: "https://github.com/smartadserver/swift-package-manager-display-sdk.git",
       branch: "main"
@@ -120,8 +99,7 @@ let package = Package(
                  package: "googleads-mobile-ios-mediation-pangle"),
         .product(name: "UnityAdsAdapter",
                  package: "googleads-mobile-ios-mediation-unity"),
-        .product(name: "OguryMediationGoogleMobileAds",
-                 package: "ogury-google-adapter-spm"),
+        // ❌ Ogury removed
         .product(name: "SmartDisplaySDK",
                  package: "swift-package-manager-display-sdk"),
       ],
