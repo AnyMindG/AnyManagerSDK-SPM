@@ -77,8 +77,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/googleads/googleads-mobile-ios-mediation-ironsource.git",
       "state" : {
-        "revision" : "4fd07e210b2e0d2081620af5c1508476c4c8b9cf",
-        "version" : "9.4.100"
+        "revision" : "1271fbe03f5d87d908d272c2fb5bb79773854ea2",
+        "version" : "9.4.0"
       }
     },
     {
@@ -203,8 +203,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ironsource-mobile/Unity-Ad-Quality-Swift-Package",
       "state" : {
-        "revision" : "222b15d9d5123f0c1de1a807293df137b4b5ceb9",
-        "version" : "9.5.1"
+        "revision" : "4fa6b6029e4489ae489216108c4f7ed8378bca9d",
+        "version" : "9.4.0"
       }
     },
     {
@@ -212,8 +212,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ironsource-mobile/Unity-Mediation-iAds-Swift-Package.git",
       "state" : {
-        "revision" : "70afee750c111d98c15d72d95fb61c72f67d4b79",
-        "version" : "9.4.1"
+        "revision" : "2ee002119191ac75ec515a5cb9f3eec0f94d0e8f",
+        "version" : "9.4.0"
       }
     },
     {

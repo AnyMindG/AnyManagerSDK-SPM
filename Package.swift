@@ -33,7 +33,7 @@ let package = Package(
     ),
     .package(
       url: "https://github.com/googleads/googleads-mobile-ios-mediation-ironsource.git",
-      exact: "9.4.100"
+      exact: "9.4.000"
     ),
     .package(
       url: "https://github.com/googleads/googleads-mobile-ios-mediation-liftoffmonetize.git",
