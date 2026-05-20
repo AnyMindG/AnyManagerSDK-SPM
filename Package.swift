@@ -25,12 +25,12 @@ let package = Package(
     )
   ],
   dependencies: [
-    // GMA Core — has version tags, use range
+    // GMA Core — has version tags
     .package(
       url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
       "11.0.0"..<"15.0.0"
     ),
-    // Adapters — no name: parameter in 5.6+
+    // Google adapters — all use branch: "main"
     .package(
       url: "https://github.com/googleads/googleads-mobile-ios-mediation-applovin.git",
       branch: "main"
@@ -79,10 +79,12 @@ let package = Package(
       url: "https://github.com/googleads/googleads-mobile-ios-mediation-unity.git",
       branch: "main"
     ),
+    // Ogury — uses "master" not "main"
     .package(
       url: "https://github.com/Ogury/ogury-google-adapter-spm",
-      branch: "main"
+      branch: "master"
     ),
+    // Equativ (Smart AdServer)
     .package(
       url: "https://github.com/smartadserver/swift-package-manager-display-sdk.git",
       branch: "main"
@@ -92,7 +94,6 @@ let package = Package(
     .target(
       name: "AnyManagerSDKTarget",
       dependencies: [
-        // In 5.6+, package: uses the last path component of the URL automatically
         .product(name: "GoogleMobileAds",
                  package: "swift-package-manager-google-mobile-ads"),
         .product(name: "AppLovinAdapter",
