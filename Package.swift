@@ -98,10 +98,22 @@ let package = Package(
                  package: "googleads-mobile-ios-mediation-pangle"),
         .product(name: "UnityAdapterTarget",
                  package: "googleads-mobile-ios-mediation-unity"),
-        .product(name: "SASDisplayKit",
-                 package: "swift-package-manager-display-sdk"),
+        .target(name: "SASGMAAdapters"),
       ],
       path: "AnyManagerSDKTarget"
     ),
+    
+    // Separate ObjC-only target for SAS adapter files
+     .target(
+       name: "SASGMAAdapters",
+       dependencies: [
+         .product(name: "GoogleMobileAds",
+                  package: "swift-package-manager-google-mobile-ads"),
+         .product(name: "SASDisplayKit",
+                  package: "swift-package-manager-display-sdk"),
+       ],
+       path: "SASGMAAdapters",
+       publicHeadersPath: "."
+     ),
   ]
 )
