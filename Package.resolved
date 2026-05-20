@@ -77,8 +77,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/googleads/googleads-mobile-ios-mediation-ironsource.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "c7feae98f309f60df333aa434b5884e87e93b1af"
+        "revision" : "4fd07e210b2e0d2081620af5c1508476c4c8b9cf",
+        "version" : "9.4.100"
       }
     },
     {
