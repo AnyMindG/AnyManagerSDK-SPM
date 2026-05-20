@@ -15,10 +15,9 @@ let package = Package(
       url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
       "13.0.0"..<"15.0.0"
     ),
-    // ⚠️ Pinned to last working tag — 13.6.2.1 zip is 404 on HEAD
     .package(
       url: "https://github.com/googleads/googleads-mobile-ios-mediation-applovin.git",
-      .revision("e88a51fc21147d924c3e754d9c5c398283b1810b")  // tag 13.6.200
+      exact: "13.6.200"
     ),
     .package(
       url: "https://github.com/googleads/googleads-mobile-ios-mediation-chartboost.git",
@@ -32,10 +31,9 @@ let package = Package(
       url: "https://github.com/googleads/googleads-mobile-ios-mediation-inmobi.git",
       branch: "main"
     ),
-    // ⚠️ IronSource — paste revision hash after running ls-remote
     .package(
       url: "https://github.com/googleads/googleads-mobile-ios-mediation-ironsource.git",
-      .revision("PASTE_IRONSOURCE_WORKING_COMMIT_HASH")
+      branch: "main"
     ),
     .package(
       url: "https://github.com/googleads/googleads-mobile-ios-mediation-liftoffmonetize.git",
